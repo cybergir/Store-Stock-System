@@ -8,7 +8,7 @@ class ProductBase(BaseModel):
     category: str
     quantity: float
     unit: UnitType
-    branch: BranchType
+    # branch: BranchType
     min_stock: float = 5
 
 class ProductCreate(ProductBase):

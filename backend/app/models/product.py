@@ -24,6 +24,6 @@ class Product(BaseModel):
     category = Column(String, nullable=False, index=True)
     quantity = Column(Numeric(10, 2), default=0)
     unit = Column(Enum(UnitType), nullable=False)
-    branch = Column(Enum(BranchType), nullable=False)
+    # branch = Column(Enum(BranchType), nullable=False)
     min_stock = Column(Numeric(10, 2), default=5)
     status = Column(Enum(StockStatus), default=StockStatus.OKAY)

@@ -76,7 +76,7 @@ const Reports: React.FC = () => {
     <div className="reports-page">
       <div className="page-header">
         <h1>Reports</h1>
-        <p>Generate and export stock movement reports</p>
+        <p>Generate and export stock reports</p>
       </div>
 
       {/* Filters Section */}
@@ -158,7 +158,7 @@ const Reports: React.FC = () => {
       <section className="results-section">
         <div className="section-card">
           <div className="results-header">
-            <h2>Stock Movement Report</h2>
+            <h2>Generated Report</h2>
             {movements && movements.length > 0 && (
               <button
                 onClick={exportToCSV}
